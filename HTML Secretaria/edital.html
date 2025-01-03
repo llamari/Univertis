@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS Candidatos/edital.css" media="screen" />
+    <link rel="stylesheet" href="../CSS Candidatos/header.css">
+    <title>Univertis</title>
+</head>
+<body>
+    <header>
+        <a href="./tela de inicio.html">
+            <img src="../assets/logo.png" id="logo">
+        </a>
+        <div class="topico">
+            <b>|</b><a href="./candidato vaga.html" style="text-decoration: none; color: #fff;">ㅤCursosㅤ</a><b>|</b><a href="./Suporte1.html" style="text-decoration: none; color: #fff;">ㅤSuporteㅤ</a><b>|</b><a href="./edital.html" style="text-decoration: none; color: #fff;">ㅤEditalㅤ</a><b>|</b>
+        </div>
+        <div id="login" onclick="openNav()">
+            <img src="../assets/gerente.png" id="loginImage" style="cursor: pointer;">
+        </div>
+        <aside>
+            <div id="MySideBar" class="sideBar">
+                <div class="topicos">
+                    <div class="perfil">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: transparent; width: 55px; height: 50px; margin-left: -25px;">
+                            <img src="../assets/login2.png" alt="Fechar" class="icon-img"> 
+                        </a>
+                        <div class="info">
+                            <h2>Lionel Messi</h2>
+                            <p>PERFIL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="opcao">
+                    <b><a href="./candidato vaga.html">Candidato por curso</a></b>
+                </div>
+                <div class="opcao">
+                    <b><a href="./pagamentos.html">Pagamentos</a></b>
+                </div>
+                <div class="opcao">
+                    <b><a href="./Suporte1.html">Suporte</a></b>
+                </div>
+                <div class="sair">
+                    <b><a href="./tela de inicio.html" id="sair">SAIR</a></b>
+                </div>
+            </div>
+        </aside>        
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="title">Editais</h1>
+            <div class="section">
+                <h2 class="section-title">RESULTADOS – 2º Semestre de 2024</h2>
+                <ul class="list">
+                    <li> <b> [RESULTADO 10ª CHAMADA]  </b> do Processo Seletivo dos Cursos de Engenharia e Administração do Câmpus Central da Univertis – 2024/2.</li>
+                    <li><b> [LISTA DE ESPERA] </b> do Processo Seletivo para os Cursos de Ciência da Computação e Arquitetura da Univertis – 2024/2.</li>
+                    <li><b> [RESULTADO 8ª CHAMADA] </b> do Processo Seletivo Complementar para os Cursos de Direito e Psicologia da Univertis – 2024/2.</li>
+                    <li><b> [RESULTADO 1ª CHAMADA] </b> do Processo Seletivo para o Programa de Inovação Acadêmica, Modalidade Presencial, Câmpus Central da Univertis – 2024/2.</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2 class="section-title">GABARITO – Processo Seletivo dos Cursos de Engenharia da Univertis – Modalidade Presencial – 2024/2.</h2>
+                <ul class="list">
+                    <li><b>[GABARITO DEFINITIVO] </b> PROVA AZUL.</li>
+                    <li><b>[GABARITO DEFINITIVO] </b> PROVA VERDE.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="coluna1">
+            <p>2023 - Univertis - Educação de Excelência desde 1957</p>
+            <p>Rua do Conhecimento, 123, Centro - São Paulo - SP CEP: 01000-000 Fone: (11) 4000-3000</p>
+            <p>Fundação Univertis - CNPJ: 12.345.678/0001-90</p>
+        </div>
+        <div class="coluna3">
+            <p>Portal de Transparência</p>
+            <p>Manual de Identidade Visual</p>
+            <p>Política de Privacidade</p>
+        </div>
+    </footer>
+    <script>
+        // Controle do comportamento da imagem de login
+        const loginImage = document.getElementById("loginImage");
+        const sair = document.getElementById("sair");
+        const sidebar = document.getElementById("MySideBar");
+        const hasClicked = localStorage.getItem("hasClicked");
+
+        loginImage.addEventListener("click", () => {
+            if (!hasClicked) {
+                // Redireciona na primeira vez
+                localStorage.setItem("hasClicked", "true");
+                window.location.href = "./login.html";
+            } else {
+                // Alterna a barra lateral nas vezes subsequentes
+                if (sidebar.style.width === "250px") {
+                    closeNav();
+                } else {
+                    openNav();
+                }
+            }
+        });
+
+        sair.addEventListener("click", () => {
+            localStorage.removeItem("hasClicked");
+            window.location.href = "./login.html";
+            console.log("FOI!!")
+        });
+
+
+        function openNav() {
+            sidebar.style.width = "250px"; // Abre a sidebar
+        }
+
+        function closeNav() {
+            sidebar.style.width = "0"; // Fecha a sidebar
+        }
+    </script>
+</body>
+</html>

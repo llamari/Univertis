@@ -1,0 +1,121 @@
+body {
+    background-color: #ededed;
+    font-family: "Inter", sans-serif;
+}
+section {
+    background-color: #1C3C6C;
+    margin-left: 1.5%;
+    height: 110%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    padding-top: 3.5%;
+}
+footer {
+    background-color: #002762;
+    width: 97%;
+    height: 170px;
+    padding-left: 3%;
+    padding-top: 2%;
+    display: flex;
+}
+.coluna1 {
+    width: 60%;
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+.coluna3 {
+    width: 40%;
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    float: right;
+}
+#branco {
+    background-color: #EDEDED;
+    border-radius: 30px;
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    display: flex;
+}
+#branco p {
+    font-size: large;
+    font-family: "Inter", sans-serif;
+}
+#b1 {
+    width: 45%;
+    border-right: 3px solid #002762;
+    text-align: center;
+}
+#b1 img {
+    width: 50%;
+    margin-top: 7%;
+}
+#cima p {
+    color: #00799F;
+    margin-top: 3%;
+    font-family: "Inter", sans-serif;
+}
+#b2 {
+    width: 55%;
+    padding-left: 2.5%;
+    padding-top: 2.5%;
+}
+input {
+    width: 85%;
+    height: 9%;
+    border: none;
+    margin-top: 1px;
+    outline: none;
+    font-size: large;
+    font-family: "Inter", sans-serif;
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+#nsei {
+    color: #00799F;
+}
+#cima {
+    border-bottom: 3px solid #002762;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 30%;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    min-width: 300px;
+    min-height: 1000px;
+    margin-top: 25%;
+    float: right;
+    margin-left: 54px;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#plmds {
+    display: flex;
+}
+#escolhido {
+    background-color: #3C5984;
+    color: #ffffff;
+    margin-top: 10%;
+    height: 6%;
+    text-align: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 10px;
+
+}
+a {
+    text-decoration: none;
+}

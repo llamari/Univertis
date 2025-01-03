@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+nav {
+    margin-left: 600px;
+    flex-grow: 1;
+    display: flex;
+    gap: 15px;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+    position: relative;
+}
+nav a:not(:last-child)::after {
+    content: "|";
+    color: white;
+    position: absolute;
+    right: -15px;
+}
+.management-area {
+    text-align: right;
+    font-size: 1em;
+    display: block;
+    flex-direction: column;
+    margin-right: 5%;
+}
+.management-area span {
+    display: flex;
+    margin-top: 15PX;
+    margin-right: -30px;
+}
+main {
+    background-color: #002f6c;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+}
+.table-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+}
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0;
+}
+th, td {
+    padding: 25px;
+    text-align: center;
+    font-size: 1.2em;
+}
+th {
+    background-color: #004080;
+    color: white;
+}
+th:nth-child(1) {
+    width: 35%; 
+    border-right: 2px solid #ffffff;
+}
+th:nth-child(2) {
+    width: 30%; 
+    border-right: 2px solid #ffffff;
+}
+th:nth-child(3) {
+    width: 35%; 
+}
+td {
+    border-top: 1px solid #ddd;
+}
+footer {
+    background-color: #002762;
+    width: 97%;
+    height: 170px;
+    padding-left: 3%;
+    padding-top: 2%;
+    display: flex;
+    margin-top: 5%;
+}
+.coluna1 {
+    width: 60%;
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+.coluna3 {
+    width: 40%;
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    float: right;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueci minha senha</title>
+    <link rel="stylesheet" type="text/css" href="../CSS Candidatos/esqueci minha senha.css">
+</head>
+<body>
+    <div id="centro">
+        <p id="text">Enviaremos um código de recuperação para seu e-mail! <br> Confirme seu endereço:</p>
+        <form id="formulario">
+            <div id="roxo">.</div>
+            <input type="email" placeholder="E-mail" id="email" required>
+        </form>
+    </div>
+
+    <script>
+        const emailInput = document.getElementById("email");
+
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Adiciona um evento de tecla ao campo de e-mail
+        emailInput.addEventListener("keydown", (event) => {
+            if (event.key === "Enter") {
+                event.preventDefault(); // Evita o comportamento padrão de envio do formulário
+                
+                const email = emailInput.value;
+
+                // Validação opcional
+                if (isValidEmail(email)) {
+                    // Redireciona para a página desejada
+                    window.location.href = "./esqueci a senha2.html";
+                } else {
+                    alert("Por favor, insira um endereço de e-mail válido.");
+                }
+            }
+        });
+    </script>
+</body>
+</html>

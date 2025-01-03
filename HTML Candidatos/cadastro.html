@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tela de cadastro</title>
+    <link rel="stylesheet" type="text/css" href="../CSS Candidatos/cadastro.css" media="screen" />
+</head>
+<body>
+    <img src="../assets/brasão.png">
+    <form action="/registrar" method="POST">
+        <div class="input-group">
+            <span class="icon">👤</span>
+            <input type="text" id="Nome" name="Nome" required placeholder="Digite seu Nome completo">
+        </div>
+        <div class="forma-grupo">
+            <div class="input-group">
+                <span class="icon">💳</span>
+                <input type="number" id="cpf" class="input-cpf" name="cpf" required placeholder="Digite seu CPF">
+            </div>
+            <div class="input-group">
+                <span class="icon">📞</span>
+                <input type="number" id="Telefone" class="input-tel" name="Telefone" required placeholder="Digite seu Telefone">
+            </div>
+        </div>
+        <div class="input-group">
+            <span class="icon">✉️</span>
+            <input type="email" id="Email" name="Email" required placeholder="Digite seu Email">
+        </div>
+        <div class="input-group">
+            <span class="icon">🔒</span>
+            <input type="password" id="senha" class="input-password" name="senha" required placeholder="Digite sua senha">
+        </div>
+        <button type="submit"><a href="../HTML Candidatos/tela de inicio.html" style="text-decoration: none; color:white;">CADASTRAR</a></button>
+    </form>
+    <p>Já tem uma conta? <a href="./tela de login.html">Clique aqui</a></p>
+</body>
+</html>

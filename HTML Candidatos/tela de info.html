@@ -1,0 +1,117 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univertis</title>
+    <link rel="stylesheet" href="../CSS Candidatos/tela de info.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS Candidatos/header.css">
+</head>
+<body>
+    <header>
+        <a href="./tela de inicio.html">
+            <img src="../assets/logo.png" id="logo">
+        </a>
+        <div class="topico">
+            <b>|</b><a href="./tela de cursos e periodos1.html" style="text-decoration: none; color: #fff;">ㅤCursosㅤ</a><b>|</b><a href="./suporte2.html" style="text-decoration: none; color: #fff;">ㅤSuporteㅤ</a><b>|</b><a href="../HTML Candidatos/edital.html" style="text-decoration: none; color: #fff;">ㅤEditalㅤ</a><b>|</b>
+        </div>
+        <div id="login">
+            <img src="../assets/login.png" id="loginImage" style="cursor: pointer;">
+        </div>
+        <aside>
+            <div id="MySideBar" class="sideBar">
+                <div class="topicos">
+                    <div class="perfil">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: transparent; width: 55px; height: 50px; margin-left: -25px;">
+                            <img src="../assets/login2.png" alt="Fechar" class="icon-img"> 
+                        </a>
+                        <div class="info">
+                            <h2>Lionel Messi</h2>
+                            <p>PERFIL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="opcao">
+                    <b><a href="../HTML Candidatos/tela de dados pessoais.html">Dados Pessoais</a></b>
+                </div>
+                <div class="opcao">
+                    <b><a href="../HTML Candidatos/tela de cursos e periodos1.html">Opções de Curso e Período</a></b>
+                </div>
+                <div class="opcao">
+                    <b><a href="../HTML Candidatos/tela de info.html">Informações Sobre a Prova</a></b>
+                </div>
+                <div class="opcao">
+                    <b><a href="../HTML Candidatos/tela de pagamentos.html">Pagamentos</a></b>
+                </div>
+                <div class="sair">
+                    <b><a href="./tela de inicio.html" id="sair">SAIR</a></b>
+                </div>
+            </div>
+        </aside>
+    </header>
+    <section>
+        <div class="barra-sobreposicao">
+            <h1>Informações sobre a prova</h1>
+        </div>
+                <div class="lapis">
+        <img src="../assets/lapis.png" alt="lapis">
+    </div>
+    <div class="texto-personalizado">
+        <p>Nos dias 3 e 4 de julho ocorrerão as Provas (Específica e Geral) do Vestibular de Inverno da Univertis. Serão oferecidos seis cursos: Curso Superior de Tecnologia em Comunicação Assistiva: tradução e interpretação de Língua Brasileira de Sinais (LIBRAS), Curso Superior de Tecnologia em Construção de Edifícios, Curso Superior de Tecnologia em Geoprocessamento, Curso Superior de Tecnologia da Gestão da Informação, Curso Superior de Tecnologia em Redes de Computadores e Direito. No total, serão 420 vagas disponíveis. Todos os Cursos Superiores de Tecnologia serão no período noturno, enquanto o curso de Direito terá vagas nos períodos matutino e noturno.</p>
+        <p>Todas as provas serão realizadas no Campus Central da Univertis, localizado na Avenida da Educação, nº 157, Bairro do Saber.</p>
+        <p>Nos dias de Prova, os candidatos deverão levar o documento original de identidade com foto, o recibo de pagamento da taxa de inscrição, caneta esferográfica preta, lápis preto nº 2, apontador e borracha macia.</p>
+    </div>    
+    </section>
+    <footer>
+        <div class="coluna1">
+            <p>2023 - Univertis - Educação de Excelência desde 1957</p>
+            <p>Rua do Conhecimento, 123, Centro - São Paulo - SP CEP: 01000-000 Fone: (11) 4000-3000</p>
+            <p>Fundação Univertis - CNPJ: 12.345.678/0001-90</p>
+        </div>
+        <div class="coluna3">
+            <p>Portal de Transparência</p>
+            <p>Manual de Identidade Visual</p>
+            <p>Política de Privacidade</p>
+        </div>
+    </footer>
+    <script>
+        // Controle do comportamento da imagem de login
+        const loginImage = document.getElementById("loginImage");
+        const sair = document.getElementById("sair");
+        const sidebar = document.getElementById("MySideBar");
+        const hasClicked = localStorage.getItem("hasClicked");
+
+        loginImage.addEventListener("click", () => {
+            if (!hasClicked) {
+                // Redireciona na primeira vez
+                localStorage.setItem("hasClicked", "true");
+                window.location.href = "./tela de login.html";
+            } else {
+                // Alterna a barra lateral nas vezes subsequentes
+                if (sidebar.style.width === "250px") {
+                    closeNav();
+                } else {
+                    openNav();
+                }
+            }
+        });
+
+        sair.addEventListener("click", () => {
+            localStorage.removeItem("hasClicked");
+            window.location.href = "./tela de login.html";
+            console.log("FOI!!")
+        });
+
+
+        function openNav() {
+            sidebar.style.width = "250px"; // Abre a sidebar
+        }
+
+        function closeNav() {
+            sidebar.style.width = "0"; // Fecha a sidebar
+        }
+    </script>
+</body>
+</html>

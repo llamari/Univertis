@@ -1,0 +1,131 @@
+body {
+    background-color: #dfe6ef;
+    color: #020000;
+    font-family: Arial, sans-serif;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    gap: 40px;
+    margin-right: 790px;
+    font-size: 23px;
+    border-right: 2px solid #ffffff;
+    justify-content: space-between;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 15px;
+    border-left: 2px solid #ffffff;
+    justify-content: space-between;
+}
+nav a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 60%; 
+    background-color: #ffffff;
+}
+.management-area {
+    display: flex;
+    align-items: center;
+}
+
+.management-area {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.management-area img {
+    height: 70px;
+    border-radius: 50%;
+}
+
+.management-area span {
+    color: #ffffff;
+    font-size: 14px;        
+    font-weight: bold;     
+}
+
+.container {
+    max-width: 100%;
+    padding: 35px;
+    background-color: #06315c;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+    .title {
+        font-size: 36px;
+        font-weight: bold;   
+        text-align: center; 
+        margin-bottom: 20px;     
+        color: #ffffff;  
+        letter-spacing: 2px;    
+    }
+    
+
+.section {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.section-title {
+    background-color: #0b114d;
+    color: #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 0;
+}
+
+.list li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: medium;
+    list-style-type: none;
+    margin-left: -2rem;
+}
+footer {
+    background-color: #002762;
+    width: 97%;
+    height: 170px;
+    padding-left: 3%;
+    padding-top: 2%;
+    display: flex;
+    margin-top: 5%;
+}
+.coluna1 {
+    width: 60%;
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+}
+.coluna3 {
+    width: 40%;
+    font-family: "K2D", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #ffffff;
+    float: right;
+}
+
+main{
+    width: 97%;
+    margin: 1.5%;
+}

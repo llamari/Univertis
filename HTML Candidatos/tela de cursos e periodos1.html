@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univertis</title>
+    <link rel="stylesheet" href="../CSS Candidatos/CSS1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Limelight&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS Candidatos/header.css">
+</head>
+<body>
+    <header>
+        <a href="./tela de inicio.html">
+            <img src="../assets/logo.png" id="logo">
+        </a>
+        <div class="topico">
+            <b>|</b><a href="./tela de cursos e periodos1.html" style="text-decoration: none; color: #fff;">ㅤCursosㅤ</a><b>|</b><a href="./suporte2.html" style="text-decoration: none; color: #fff;">ㅤSuporteㅤ</a><b>|</b><a href="../HTML Candidatos/edital.html" style="text-decoration: none; color: #fff;">ㅤEditalㅤ</a><b>|</b>
+        </div>
+        <div id="login">
+            <img src="../assets/login.png" id="loginImage" style="cursor: pointer;">
+        </div>
+        <aside>
+            <div id="MySideBar" class="sideBar">
+                <div class="topicos">
+                    <div class="perfil">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="background-color: transparent; width: 55px; height: 50px; margin-left: -25px;">
+                            <img src="../assets/login2.png" alt="Fechar" class="icon-img"> 
+                        </a>
+                        <div class="info">
+                            <h2>Lionel Messi</h2>
+                            <p>PERFIL</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="opcao">
+                    <b><a href="../HTML Candidatos/tela de dados pessoais.html">Dados Pessoais</a></b>
+                </div>
+                <div class="opcao">
+                    <b><a href="../HTML Candidatos/tela de cursos e periodos2.html">Opções de Curso e Período</a></b>
+                </div>
+                <div class="opcao">
+                    <b><a href="../HTML Candidatos/tela de info.html">Informações Sobre a Prova</a></b>
+                </div>
+                <div class="opcao">
+                    <b><a href="../HTML Candidatos/tela de pagamentos.html">Pagamentos</a></b>
+                </div>
+                <div class="sair">
+                    <b><a href="./tela de inicio.html" id="sair">SAIR</a></b>
+                </div>
+            </div>
+        </aside>
+    </header>
+    <section style="background-color: #1C3C6C;">
+        <div class="d">
+            <p style="padding-top: 3%;"><b>Opções de Curso e Período</b></p>
+        </div>
+        <div class="a">
+            <div class="branco" style="height: 85%;">
+                <form>
+                    <p><b>Unidade selecionada</b></p>
+                    <p>
+                        <select name="unidades">
+                            <option value="vazio"> </option>
+                            <option value="campinas">Univertis - Campinas</option>
+                            <option value="goias">Univertis - Goiás</option>
+                            <option value="minas">Univertis - Minas</option>
+                            <option value="rio">Univertis - Rio</option>
+                            <option value="rs">Univertis - RS</option>
+                            <option value="sp">Univertis - SP</option>
+                        </select>
+                    </p>
+                    <p><b>Curso selecionado</b></p>
+                    <p>
+                        <select name="cursos">
+                            <option value="vazio"> </option>
+                            <option value="1">Administração</option>
+                            <option value="2">Ciência da Computação</option>
+                            <option value="3">Direito</option>
+                            <option value="4">Engenharia Civil</option>
+                            <option value="5">Publicidade</option>
+                            <option value="6">Jornalismo</option>
+                            <option value="7">Letras</option>
+                            <option value="8">Matemática</option>
+                            <option value="9">Psicologia</option>
+                        </select>
+                    </p> 
+                    <p><b>Turno selecionado</b></p>
+                    <p>
+                        <select name="turnos">
+                            <option value="vazio"> </option>
+                            <option value="m">Matutino</option>
+                            <option value="v">Vespertino</option>
+                            <option value="n">Noturno</option>
+                            <option value="i1">Integral: Matutino/Vespertino </option>
+                            <option value="i2">Integral: Vespertino/Noturno</option>
+                        </select>
+                    </p> 
+                    
+                </form>
+                <p id="edit">Editar Informações Registradas 🖋</p>
+            </div>
+            <div class="branco" style="height: 85%;">
+                <p id="t1">O processo seletivo ainda não está pronto</p>
+                <img src="../assets/x.png" style="margin-left: 39%; width: 22%;">
+                <p id="t2">Espere até XX/XX/XXXX para visualizar a lista de chamada</p>
+
+                <p class="titulo">Sua nota no vestibular</p>
+                <div class="lugar"></div>
+                <p class="titulo">Sua nota no ENEM</p>
+                <div class="lugar"></div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="coluna1">
+            <p>2023 - Univertis - Educação de Excelência desde 1957</p>
+            <p>Rua do Conhecimento, 123, Centro - São Paulo - SP CEP: 01000-000 Fone: (11) 4000-3000</p>
+            <p>Fundação Univertis - CNPJ: 12.345.678/0001-90</p>
+        </div>
+        <div class="coluna3">
+            <p>Portal de Transparência</p>
+            <p>Manual de Identidade Visual</p>
+            <p>Política de Privacidade</p>
+        </div>
+    </footer>
+    <script>
+        // Controle do comportamento da imagem de login
+        const loginImage = document.getElementById("loginImage");
+        const sair = document.getElementById("sair");
+        const sidebar = document.getElementById("MySideBar");
+        const hasClicked = localStorage.getItem("hasClicked");
+
+        loginImage.addEventListener("click", () => {
+            if (!hasClicked) {
+                // Redireciona na primeira vez
+                localStorage.setItem("hasClicked", "true");
+                window.location.href = "./tela de login.html";
+            } else {
+                // Alterna a barra lateral nas vezes subsequentes
+                if (sidebar.style.width === "250px") {
+                    closeNav();
+                } else {
+                    openNav();
+                }
+            }
+        });
+
+        sair.addEventListener("click", () => {
+            localStorage.removeItem("hasClicked");
+            window.location.href = "./tela de login.html";
+            console.log("FOI!!")
+        });
+
+
+        function openNav() {
+            sidebar.style.width = "250px"; // Abre a sidebar
+        }
+
+        function closeNav() {
+            sidebar.style.width = "0"; // Fecha a sidebar
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/WhatsApp Image 2024-08-08 at 09.15.14.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    padding: 60px;
+    width: 170px;
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: hsl(239, 52%, 25%);
+    padding: 25px;
+    border-radius: 13px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #f3e4e4;
+    font-weight: bold;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #481fcf;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 1px;
+}
+
+.input-group .icon {
+    margin-right: 10px;
+    font-size: 18px;
+    color: hsl(270, 10%, 4%);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+input[type="number"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 0px;
+}
+
+input::placeholder {
+    color: #bbb;
+}
+
+button {
+    background-color: hsl(239, 52%, 25%);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #7b74cd;
+}
+
+p {
+    text-align: center;
+    color: #1b0c0c;
+}
+
+p a {
+    color: #4a11e4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.forma-grupo {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-cpf,
+.input-tel {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 0px;
+}

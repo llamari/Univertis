@@ -1,0 +1,75 @@
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url("../WhatsApp\ Image\ 2024-08-08\ at\ 09.15.14.jpeg");
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            position: relative;
+            width: 500px;
+            padding: 35px;
+            background: #1a237e;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #fff;
+        }
+        .login-container img {
+            position: absolute;
+            top: -360px;
+            left: 45%;
+            transform: translateX(-50%);
+            width: 280px;
+            height: 10px;
+            border-radius: 10%;
+            background-image: url("../Captura_de_tela_2024-08-13_105452-removebg-preview.png");
+            padding: 180px;
+            margin-bottom: 40px;
+        }
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-container input {
+            width: 98%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 50px;
+            background: #3949ab;
+            color: #fff;
+            cursor: pointer;
+        }
+        .login-container a {
+            display: block;
+            text-align: right;
+            margin-top: 10px;
+            color: #bbdefb;
+            text-decoration: none;
+        }
+        .login-container .footer {
+            display: flex;
+            text-align: right;
+            justify-content: space-evenly;
+            margin-top: 100px;
+        }
+        .login-container a, .login-container .extra-button {
+            color: #2c8ad6;
+            text-decoration: none;
+            background: none;
+            border: none;
+            cursor: auto ;
+            margin-left: -120px;
+            
+        }
+        #ex {
+            display: flex;
+        }
+        
